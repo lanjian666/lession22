@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GetIp2 extends HttpServlet {
 	@Override
 	protected long getLastModified(HttpServletRequest req) {
-		return new Date().getTime()-30000;
+		return System.currentTimeMillis()-30000;
 	}
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

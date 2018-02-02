@@ -1,6 +1,5 @@
 package file;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
@@ -24,8 +23,8 @@ import com.aliyun.oss.OSSClient;
 /**
  * Servlet implementation class Fileto
  */
-public class Fileto extends HttpServlet {
-	private static final Logger logger =LogManager.getLogger(Fileto.class.getName());
+public class FileToOSS extends HttpServlet {
+	private static final Logger logger =LogManager.getLogger(FileToOSS.class.getName());
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		req.setCharacterEncoding("utf-8");
